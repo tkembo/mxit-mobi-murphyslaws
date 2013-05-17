@@ -15,6 +15,7 @@
 	$database_mxit_murphyslaws = "mxitmurphyslaws";
 	$username_mxit_murphyslaws = "bf972afd92da56";
 	$password_mxit_murphyslaws = "bc3d7eca";
+	
 	$mxit_murphyslaws = mysql_pconnect($hostname_mxit_murphyslaws, $username_mxit_murphyslaws, $password_mxit_murphyslaws) or trigger_error(mysql_error(),E_USER_ERROR); 
 	
 ?>
