@@ -90,9 +90,9 @@
             
         </ul>
        			
-            <b><a href="clear_screen.html">a</a>) </b><a href="clear_screen.html">Clear screen</a><br/>            
-			<b><a href="index.php">b</a>) </b><a href="index.php">Home (Category Listing)</a><br/>
-            <?php 
+            <p><b><a href="clear_screen.html">a</a>) </b><a href="clear_screen.html">Clear screen</a><br/>            
+              <b><a href="index.php">b</a>) </b><a href="index.php">Home (Category Listing)</a><br/>
+              <?php 
 			$next_page = $_GET['pageNum_quoteRecordset'] + 1;
 			
 			if ($totalPages_quoteRecordset >= ($next_page+1)){
@@ -101,13 +101,13 @@
           }else
 		  echo "<br/><b>Those are all the ".$row_categoryNameRecordset['category']." we have right now.</b><br/> <b>Thank you!</b>";
           ?>
-        <?php
+              <?php
   			$googleAnalyticsImageUrl = googleAnalyticsGetImageUrl();
 		?>
-		<img src="<?php echo $googleAnalyticsImageUrl; ?>"/>  
-        <br/> 	
-        
-        <?php
+              <img src="<?php echo $googleAnalyticsImageUrl; ?>"/>  
+              <br/> 	
+              
+              <?php
 
 		 /*
 		 * Create shinka banner ad object.
@@ -127,6 +127,8 @@
 		print $ShinkaBannerAd->generateHTMLFromAd();
 
 		?>	
+            </p>
+            <p><strong><a href="feedback.php">F1</a>) <a href="feedback.php">Feedback/Help/About/More Info</a></strong></p>
     </body>
 </html>
 <?php

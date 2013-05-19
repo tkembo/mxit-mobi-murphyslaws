@@ -54,10 +54,10 @@
 			<?php } while ($row_categoryRecordset = mysql_fetch_assoc($categoryRecordset)); ?>    
 
         </ul>
-        <br/>
-        <b><a href="clear_screen.html">a</a>) </b><a href="clear_screen.html"><b>Clear screen</b></a>
-        <br/>
-        <?php
+        <p><br/>
+          <b><a href="clear_screen.html">a</a>) </b><a href="clear_screen.html"><b>Clear screen</b></a>
+          <br/>
+          <?php
 			if (isset($_GET['pageNum_categoryRecordset']) && $_GET['pageNum_categoryRecordset'] >0 ) 
 			{
 				$nextPage = $pageNum_categoryRecordset + 1;
@@ -77,14 +77,14 @@
 				echo "<b><a href=\"./?pageNum_categoryRecordset=".$nextPage."\">b</a>) </b><a href=\"./?pageNum_categoryRecordset=".$nextPage."\"><b>Next Page</b></a>";
 			}
 		?>
-        
-       <?php
+          
+          <?php
   			$googleAnalyticsImageUrl = googleAnalyticsGetImageUrl();
 		?>
-		<img src="<?php echo $googleAnalyticsImageUrl; ?>" /> 
-        <br/>
-        
-        <?php
+          <img src="<?php echo $googleAnalyticsImageUrl; ?>" /> 
+          <br/>
+          
+          <?php
 			 /*
 			 * Create shinka banner ad object.
 			 * Can be done at top of page, and re-used to display multiple banners on page.
@@ -102,6 +102,8 @@
 			$ShinkaBannerAd->doServerAdRequest('text');
 			print $ShinkaBannerAd->generateHTMLFromAd();
 		?>     	
+        </p>
+        <p><strong><a href="feedback.php">F1</a>) <a href="feedback.php">Feedback/Help/About/More Info</a></strong></p>
     </body>
 </html>
 <?php
