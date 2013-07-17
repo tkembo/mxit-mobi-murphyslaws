@@ -128,7 +128,7 @@
 
 		?>	
             </p>
-            <p><strong><a href="feedback.php">F1</a>) <a href="feedback.php">Feedback/Help/About/More Info</a></strong></p>
+            <p><strong><a href="feedback.php">F1</a>) <a href="feedback.php">About this app</a></strong></p>
     </body>
 </html>
 <?php
